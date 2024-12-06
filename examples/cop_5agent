@@ -1,0 +1,52 @@
+module m0 controls a,b
+init
+:: true ~> a' := false, b':= false;
+update
+:: h or a ~> a' := true, b':= b;
+:: h or a ~> a' := false, b':= true;
+:: b ~> a' := a, b':= false;
+goal
+:: (G F !(b));
+
+module m1 controls c,d
+init
+:: true ~> c' := false, d':= false;
+update
+:: b or c ~> c' := true, d':= d;
+:: b or c ~> c' := false, d':= true;
+:: d ~> c' := c, d':= false;
+goal
+:: (G F !(c));
+
+module m2 controls e,f
+init
+:: true ~> e' := false, f':= false;
+update
+:: d or e ~> e' := true, f':= f;
+:: d or e ~> e' := false, f':= true;
+:: f ~> e' := e, f':= false;
+goal
+:: (G F !(e));
+
+module m3 controls g,h
+init
+:: true ~> g' := false, h':= true;
+update
+:: j or g ~> g' := true, h':= h;
+:: j or g ~> g' := false, h':= true;
+:: h ~> g' := g, h':= false;
+goal
+:: (G F !(g));
+
+module m4 controls i,j
+init
+:: true ~> i' := false, j':= false;
+update
+:: f or i ~> i' := true, j':= j;
+:: f or i ~> i' := false, j':= true;
+:: j ~> i' := i, j':= false;
+goal
+:: (G F !(i));
+
+property
+:: G F c;

@@ -1,0 +1,31 @@
+module ma controls a,b,e
+    init
+    :: true ~> a' := true, b':=false,e':=false;
+    update
+    :: c ~> a' := false, b':=true,e':=false;
+    :: d ~> a' := false,b' := false, e':=true;
+    :: e and f ~> a' := true,b' := false, e':=false;
+    goal
+    ::  G F (e);
+
+module mb controls c,d,f
+    init
+    :: true ~> c' := true, d':=false,f':=false;
+    update
+    :: b ~> c' := false, d':=true,f':=false;
+    :: e ~> c' := false, d':=false,f':=true;
+    :: e and f ~> c' := true, d':=false,f':=false;
+    goal
+    ::  G F (d);
+
+module mc controls g
+    init
+    :: true ~> g' := false;
+    update
+    :: b and d ~> g' := true;
+    :: e and f ~> g' := false;
+    goal
+    ::  G F (g);
+
+property
+    :: (G F (e)) and (G F (d)) and (G F (g));

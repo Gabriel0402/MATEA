@@ -1,0 +1,83 @@
+Logging to ../aaai/2agent/dcent/M1/0
+---------------------------
+| dnf          | !f&c     |
+| episodes     | 4        |
+| steps        | 1e+04    |
+| total reward | 1        |
+| true_props   | c        |
+---------------------------
+---------------------------
+| dnf          | !e&a     |
+| episodes     | 9        |
+| steps        | 2e+04    |
+| total reward | 1        |
+| true_props   | c        |
+---------------------------
+---------------------------
+| dnf          | c        |
+| episodes     | 14       |
+| steps        | 3e+04    |
+| total reward | 0        |
+| true_props   | b        |
+---------------------------
+---------------------------
+| dnf          | !c&d     |
+| episodes     | 19       |
+| steps        | 4e+04    |
+| total reward | 0        |
+| true_props   | f&a      |
+---------------------------
+---------------------------
+| dnf          | c        |
+| episodes     | 24       |
+| steps        | 5e+04    |
+| total reward | 0        |
+| true_props   | e        |
+---------------------------
+---------------------------
+| dnf          | c        |
+| episodes     | 29       |
+| steps        | 6e+04    |
+| total reward | 1        |
+| true_props   | h        |
+---------------------------
+---------------------------
+| dnf          | !f&c     |
+| episodes     | 34       |
+| steps        | 7e+04    |
+| total reward | 0        |
+| true_props   | h        |
+---------------------------
+---------------------------
+| dnf          | !d&f     |
+| episodes     | 39       |
+| steps        | 8e+04    |
+| total reward | 1        |
+| true_props   | g        |
+---------------------------
+---------------------------
+| episodes     | 44       |
+| steps        | 9e+04    |
+| total reward | 1        |
+---------------------------
+---------------------------
+| dnf          | c        |
+| episodes     | 49       |
+| steps        | 1e+05    |
+| total reward | 1        |
+| true_props   | f&d      |
+---------------------------
+---------------------------
+| dnf          | !e&a     |
+| episodes     | 54       |
+| steps        | 1.1e+05  |
+| total reward | 1        |
+| true_props   | f        |
+---------------------------
+---------------------------
+| dnf          | !c&d     |
+| episodes     | 59       |
+| steps        | 1.2e+05  |
+| total reward | 0        |
+| true_props   | c&c      |
+---------------------------
